@@ -1,0 +1,77 @@
+### Index method
+GET http://localhost:3000/api/jokes
+
+### Succesfully posts a joke 
+POST http://localhost:3000/api/jokes
+Content-Type: application/json
+
+{
+    "category_id": 1,
+    "body": "The furniture store keeps calling me to come back, but all I wanted was one night stand"
+}
+
+### unsuccesfully posts a joke 
+POST http://localhost:3000/api/jokes
+Content-Type: application/json
+
+{
+    "body": "The furniture store keeps calling me to come back, but all I wanted was one night stand"
+}
+
+### show joke id: 1 
+GET http://localhost:3000/api/jokes/1 
+
+###  unsucessully show joke id: 1000
+GET http://localhost:3000/api/jokes/1000
+
+### Sucessfully update joke 1
+PUT http://localhost:3000/api/jokes/1 
+Content-Type: application/json
+
+{
+    "body": "A Programming Joke",
+    "category_id": 2
+}
+
+### Random Joke 
+GET http://localhost:3000/api/jokes/random?category=great
+
+
+### Create user
+POST  http://localhost:3000/api/auth/sign_up
+Content-Type: application/json
+
+{
+    "username": "Alex3",
+    "email": "alex3@test.com",
+    "password": "password2",
+    "password_confirmation": "password2"
+}
+
+
+### Get categoies
+
+GET http://localhost:3000/api/categories
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
